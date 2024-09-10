@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir</title>
+  </head>
+  <body>
+    <style>
+
+      body{
+        font-family: "Poppins", sans-serif;
+        background-image: url("th.jpeg");
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 13px;
+       
+       
+
+      }
+
+      form {
+        background-color: rgba(47, 0, 1, 0.8);
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 450px;
+        margin: 10px;
+        font-size: 14px;
+        color: #fff;
+        
+       
+      }
+
+      
+      
+      legend {
+        font-size: 1.6em;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 10px;
+        color: #b3dbc0;
+        font-weight: 700;
+      
+      }
+      table {
+        width: 100%;
+      }
+      
+      
+      label {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 500;
+        font-size: 13px;
+    
+      }
+
+
+      input[type="text"],
+      input[type="password"],
+      input[type="date"],
+      input[type="pa"],
+      input[type="mail"],
+      input[type="number"],
+      textarea {
+        width: 100%;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+      
+      }
+      select {
+        width: 100%;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        
+      }
+
+      button {
+        background-color: #7d766c;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-right: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+      }
+
+      button[type="reset"] {
+        background-color: #7d766c;
+      }
+
+
+
+     
+
+
+
+
+      
+ </style>
+  
+  <body>
+    <form action="#">
+<H3>FORM PENDAFTARAN</H3>
+      <fieldset>
+        <legend>AKUN</legend>
+        <table>
+          <tr>
+            <td><label for="uname">Username:</label></td>
+            <td>
+              <input
+                type="text"
+                id="uname"
+                name="username"
+                placeholder="Masukkan Username"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="pass">Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="pass"
+                name="password"
+                placeholder="Masukkan Password"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="ttl">Tanggal Lahir:</label></td>
+            <td>
+              <input
+                type="date"
+                name="ttl"
+                id="ttl"
+                placeholder="Masukkan Nama Lengkap"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="pas">Konfirmasi Pasword:</label></td>
+            <td>
+              <input
+                type="pa"
+                id="pas"
+                name="Konfirmasi Password"
+                placeholder="Masukkan Konfirmasi Password"
+                required>
+            </tr>
+        </table>
+      </fieldset>
+
+ <form action="#">
+      <fieldset>
+        <legend>DATA</legend>
+        <table>
+          
+              <tr>
+                <td><label for="u">Nama:</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="u"
+                    name="Nama:"
+                    placeholder="Masukkan Nama Lengkap"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="gender">Jenis Kelamin:</label></td>
+                <td>
+                  <input type="radio" name="Jenis Kelamin" value="pria" />Pria
+                </td>
+                <td>
+                  <input
+                    type="radio"
+                    name="Jenis Kelamin"
+                    value="perempuan"
+                  />Perempuan
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="Religion">Agama:</label></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                  <td><input type="checkbox" name="Religion" value="Kristen" />Kristen
+                </td>
+                </tr>
+
+                <tr>
+                <td></td>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="Religion"
+                    value="Katholik"
+                  />Katholik
+                </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="Religion" value="Islam" />Islam
+                  </td>
+                  </tr>
+
+                  <tr>
+                  <td></td>
+                  <td>
+                    <input type="checkbox" name="Religion" value="Buddha" />Buddha
+                  </td>
+                  </tr>
+
+                  <tr>
+                  <td></td>
+                    <td>
+                    <input type="checkbox" name="Religion" value="Hindu" />Hindu
+                  </td>
+              </tr>
+
+              <tr>
+                <td><label for="mail">Email:</label></td>
+                <td>
+                  <input
+                    type="mail"
+                    id="mail"
+                    name="email"
+                    placeholder="Masukkan Email"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="no">Nomor Telepon</label></td>
+                <td>
+                  <input
+                    type="number"
+                    id="no"
+                    name="no"
+                    placeholder="Masukkan Nomor Telepon"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>Informasi yang Disukai:</td>
+                <td>
+                  <select name="Informasi yang Disukai">
+                    <option>Olahraga</option>
+                    <option>Kesehatan</option>
+                    <option>Travelling</option>
+                    <option>Berita Terbaru</option>
+                    <option>Fashion</option>
+                    <option>Skincare</option>
+                    <option>Teknologi</option>
+                    <option>Keuangan</option>
+                    <option>Arsitektur</option>
+                    <option>Pendidikan</option>
+                    <option>Manajemen</option>
+                    <option>Bismis</option>
+                    <option>Periklanan</option>
+                    <option>Pemasaran</option>
+                    <option>Retail</option>
+                    <option>Penjualan</option>
+                    <option>Multimedia</option>
+                    <option>Properti</option>
+                    <option>Jurnalistik</option>
+                    <option>Media</option>
+                    <option>Konsultasi</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Program Studi:</td>
+                <td>
+                  <select name="jurusan">
+                    <option value="ilkom">Ilmu Komputer</option>
+                    <option value="ti">Teknologi Informasi</option>
+                           
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="alamat">Alamat:</label></td>
+                <td>
+                  <textarea name="alamat" id="alamat" rows="5" cols="14">
+              Isi Alamat Disini
+              </textarea
+                  >
+                </td>
+              </tr>
+            </table>
+        </fieldset>
+        
+      <button type="submit">Daftar</button>
+      <button type="reset">Reset</button>
+    </form>
+
+  </body>
+</html>
